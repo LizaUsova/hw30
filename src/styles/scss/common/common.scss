@@ -1,0 +1,21 @@
+@use "./variables" as *;
+
+body {
+ box-sizing: border-box;
+ font-family: $font-late-regular;
+ color: $main-text-color;
+}
+
+a {
+ text-decoration: none;
+}
+
+h1 {
+ font-family: $font-late-bold;
+ font-size: $f-ml;
+}
+
+img {
+ width: 100%;
+}
+

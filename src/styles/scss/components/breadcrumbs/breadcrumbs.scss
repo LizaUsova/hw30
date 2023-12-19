@@ -1,0 +1,7 @@
+@use './../../common/variables' as *;
+
+.breadcrumbs {
+  a {
+    color: $main-link-color;
+  }
+}

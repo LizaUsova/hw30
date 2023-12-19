@@ -1,0 +1,39 @@
+@use "./../../common/variables" as *;
+
+.footer {
+  &-top {
+    padding-top: 45px;
+    padding-bottom: 22px;
+    background-color: $main-text-color;
+
+    &_picture {
+      width: 100%;
+      max-width: 50%;
+    }
+
+    &_logo {
+      width: 100%;
+      max-width: 60%;
+    }
+
+    .list-group {
+      a {
+        color: $bg-footer-link-color;
+      }
+    }
+
+    p, span {
+      color: $bg-footer-link-color;
+    }
+  }
+
+  &-bottom {
+    background-color: black;
+
+    p {
+      color: $bg-footer-link-color;
+    }
+  }
+
+
+}

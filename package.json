@@ -1,0 +1,21 @@
+{
+  "name": "hw30",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "scss-compile-home-page": "sass --watch ./src/styles/scss/home-page.scss:./src/styles/css/home-page.css"
+  },
+  "author": "",
+  "license": "ISC",
+  "devDependencies": {
+    "stylelint": "^16.0.2",
+    "stylelint-config-clean-order": "^5.2.0"
+  },
+  "dependencies": {
+    "bootstrap": "^5.3.2",
+    "bootstrap-icons": "^1.11.2",
+    "stylelint-config-standard-scss": "^12.0.0"
+  }
+}
