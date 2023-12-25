@@ -9,24 +9,790 @@
     <link rel="stylesheet" href="./../styles/css/home-page.css">
 </head>
 <body class="bg-light">
-<header class="header">
-    <div class="header_top py-1">
-                <div class="container">
-                    <div class="row">
-                        <div class="col-12 d-flex align-items-center justify-content-between">
-                            <div class="header-top__contact">
-                                <a class="text-reset" href="tel:+33(0)499632050">
-                                    <small>
-                                        <i class="bi bi-telephone pe-2"></i>
-                                        <span>+33(0)499632050</span>
-                                    </small>
-                                </a>
+    <header class="header">
+        <div class="header_top py-1">
+                    <div class="container">
+                        <div class="row">
+                            <div class="col-12 d-flex align-items-center justify-content-between">
+                                <div class="header-top__contact">
+                                    <a class="text-reset" href="tel:+33(0)499632050">
+                                        <small>
+                                            <i class="bi bi-telephone pe-2"></i>
+                                            <span>+33(0)499632050</span>
+                                        </small>
+                                    </a>
+                                </div>
+                                <div class="header-top__lang">
+                                    <div class="dropdown">
+                                        <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                            <i class="bi bi-globe"></i>
+                                            <span>English</span>
+                                        </button>
+                                        <ul class="dropdown-menu">
+                                            <li><a class="dropdown-item" href="#">Ukrainian</a></li>
+                                            <li><a class="dropdown-item" href="#">Italian</a></li>
+                                            <li><a class="dropdown-item" href="#">German</a></li>
+                                        </ul>
+                                    </div>
+                                </div>
                             </div>
-                            <div class="header-top__lang">
+                         </div>
+                    </div>
+                </div>
+        <div class="header_bottom shadow bg-body py-2">
+                 <nav class="navbar navbar-expand-lg">
+                <div class="container">
+                    <a class="navbar-brand me-5" href="#">
+                        <img src="../assets/pictures/svg/logo_header.svg" alt="DUO Shop">
+                    </a>
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+                    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                            <li class="nav-item me-5">
+                                <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#searchModal">
+                                    <i class="bi bi-search"></i>
+                                </a>
+                            </li>
+                            <li class="nav-item dropdown me-2">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Products
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
+                                    <li><a class="dropdown-item" href="#">ALorem ipsum.</a></li>
+                                    <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item dropdown me-2">
+                                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    Applications
+                                </a>
+                                <ul class="dropdown-menu">
+                                    <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
+                                    <li><a class="dropdown-item" href="#">ALorem ipsum.</a></li>
+                                    <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
+                                </ul>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="#">Documentation</a>
+                            </li>
+                        </ul>
+                        <div>
+                            <ul class="list-unstyled d-flex align-items-center gap-3 m-0">
+                                <li>
+                                    <a href="#" class="text-reset fs-5" data-bs-toggle="modal" data-bs-target="#account">
+                                        <i class="bi bi-person"></i>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#" class="text-reset fs-5" data-bs-toggle="offcanvas" data-bs-target="#offcanvasScrolling" aria-controls="offcanvasScrolling">
+                                        <i class="bi bi-cart"></i>
+                                    </a>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="breadcrumbs pt-4 pb-2">
+            <div class="container">
+                <div class="row">
+                    <div class="col-12">
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Products</a></li>
+                                <li class="breadcrumb-item"><a href="#">Display Wall</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Products</li>
+                            </ol>
+                        </nav>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="heading pb-4">
+            <div class="container">
+                <div class="row col-12">
+                    <h1>Display Wall</h1>
+                </div>
+            </div>
+        </section>
+        <section class="catalog-controls pb-4">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="catalog-controls__view d-grid dropdown">
+                            <button type="button" class="btn bg-body dropdown-toggle rounded-pill shadow-sm dropdown-toggle-split" data-bs-toggle="dropdown" aria-expanded="false">
+                                Display Wall
+                            </button>
+                            <ul class="dropdown-menu">
+                                <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
+                                <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
+                                <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
+                            </ul>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                        <form class="catalog-controls__search position-relative">
+                            <label class="form-label m-0 d-block">
+                                 <input class="form-control text-secondary border-end-0 rounded-pill border-white shadow-sm" placeholder="Search" type="text" aria-describedby="button-addon2">
+                            </label>
+                            <button class="btn border-0 bg-body position-absolute" type="submit" id="searchCatalog"><i class="bi bi-search"></i></button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <section class="content">
+            <div class="container">
+                <div class="row pb-5">
+                    <div class="col-3">
+                        <div class="content__filter bg-body rounded-4 shadow-sm row d-flex align-items-center m-0 px-0 py-3 gap-4">
+                            <div class="row m-0">
+                                <div class="col-12 d-flex align-items-center justify-content-between">
+                                    <p class="m-0">23 Results</p>
+                                    <a href="#" class="text-danger"><i class="bi bi-x-circle me-2"></i><span>Clear all Filters</span></a>
+                                </div>
+                            </div>
+                            <div class="row m-0 px-0">
+                                <div class="accordion" id="accordionPanelsStaySubcategory">
+                                    <div class="accordion-item border-0">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSubcategory" aria-expanded="true" aria-controls="panelsStayOpen-collapseSubcategory">
+                                                    Subcategory
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseSubcategory" class="accordion-collapse collapse show">
+                                                <div class="accordion-body">
+                                                    <ul class="d-flex gap-3 flex-column ps-0">
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxSubcategory">
+                                                            <label class="form-check-label" for="firstCheckboxSubcategory">
+                                                                <p class="mb-0">Xpression<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxSubcategory">
+                                                            <label class="form-check-label" for="secondCheckboxSubcategory">
+                                                                <p class="mb-0">Xtension<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxSubcategory">
+                                                            <label class="form-check-label" for="thirdCheckboxSubcategory">
+                                                                <p class="mb-0">Virage<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckboxSubcategory">
+                                                            <label class="form-check-label" for="fourthCheckboxSubcategory">
+                                                                <p class="mb-0">Contour<span class="text-secondary ms-1">(4)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckboxSubcategory">
+                                                            <label class="form-check-label" for="fifthCheckboxSubcategory">
+                                                                <p class="mb-0">Xperience<span class="text-secondary ms-1">(4)</span></p>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="accordion-item border-0">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseType" aria-expanded="true" aria-controls="panelsStayOpen-collapseType">
+                                                    Type
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseType" class="accordion-collapse collapse show">
+                                                <div class="accordion-body">
+                                                    <ul class="d-flex gap-3 flex-column ps-0">
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxType">
+                                                            <label class="form-check-label" for="firstCheckboxType">
+                                                                <p class="mb-0">Pop-up<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxType">
+                                                            <label class="form-check-label" for="secondCheckboxType">
+                                                                <p class="mb-0">Tubar<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxType">
+                                                            <label class="form-check-label" for="thirdCheckboxType">
+                                                                <p class="mb-0">Table top<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="accordion-item border-0">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFeatures" aria-expanded="true" aria-controls="panelsStayOpen-collapseFeatures">
+                                                    Features
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseFeatures" class="accordion-collapse collapse show">
+                                                <div class="accordion-body">
+                                                    <ul class="d-flex gap-3 flex-column ps-0">
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxFeatures">
+                                                            <label class="form-check-label" for="firstCheckboxFeatures">
+                                                                <p class="mb-0">Backlit<span class="text-secondary ms-1">(7)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxFeatures">
+                                                            <label class="form-check-label" for="secondCheckboxFeatures">
+                                                                <p class="mb-0">TV Mount<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxFeatures">
+                                                            <label class="form-check-label" for="thirdCheckboxFeatures">
+                                                                <p class="mb-0">Shelving<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckboxFeatures">
+                                                            <label class="form-check-label" for="fourthCheckboxFeatures">
+                                                                <p class="mb-0">Arch<span class="text-secondary ms-1">(4)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckboxFeatures">
+                                                            <label class="form-check-label" for="fifthCheckboxFeatures">
+                                                                <p class="mb-0">Double sided<span class="text-secondary ms-1">(4)</span></p>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="accordion-item border-0">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseWidth" aria-expanded="true" aria-controls="panelsStayOpen-collapseWidth">
+                                                    Width
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseWidth" class="accordion-collapse collapse show">
+                                                <div class="accordion-body">
+                                                    <ul class="d-flex gap-3 flex-column ps-0">
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxWidth">
+                                                            <label class="form-check-label" for="firstCheckboxWidth">
+                                                                <p class="mb-0">2.5<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxWidth">
+                                                            <label class="form-check-label" for="secondCheckboxWidth">
+                                                                <p class="mb-0">5<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxWidth">
+                                                            <label class="form-check-label" for="thirdCheckboxWidth">
+                                                                <p class="mb-0">8<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckboxWidth">
+                                                            <label class="form-check-label" for="fourthCheckboxWidth">
+                                                                <p class="mb-0">10<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckboxWidth">
+                                                            <label class="form-check-label" for="fifthCheckboxWidth">
+                                                                <p class="mb-0">20<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="accordion-item border-0">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseHeight" aria-expanded="true" aria-controls="panelsStayOpen-collapseHeight">
+                                                    Height
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseHeight" class="accordion-collapse collapse show">
+                                                <div class="accordion-body">
+                                                    <ul class="d-flex gap-3 flex-column ps-0">
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxHeight">
+                                                            <label class="form-check-label" for="firstCheckboxHeight">
+                                                                <p class="mb-0">4<span class="text-secondary ms-1">(7)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxHeight">
+                                                            <label class="form-check-label" for="secondCheckboxHeight">
+                                                                <p class="mb-0">8<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxHeight">
+                                                            <label class="form-check-label" for="thirdCheckboxHeight">
+                                                                <p class="mb-0">10<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="accordion-item border-0">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseForm" aria-expanded="true" aria-controls="panelsStayOpen-collapseForm">
+                                                    Form
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseForm" class="accordion-collapse collapse show">
+                                                <div class="accordion-body">
+                                                    <ul class="d-flex gap-3 flex-column ps-0">
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxForm">
+                                                            <label class="form-check-label" for="firstCheckboxForm">
+                                                                <p class="mb-0">Straight<span class="text-secondary ms-1">(7)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxForm">
+                                                            <label class="form-check-label" for="secondCheckboxForm">
+                                                                <p class="mb-0">Curved<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="accordion-item border-0">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsePriceRange" aria-expanded="true" aria-controls="panelsStayOpen-collapsePriceRange">
+                                                    Price Range
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapsePriceRange" class="accordion-collapse collapse show">
+                                                <div class="accordion-body">
+                                                    <ul class="d-flex gap-3 flex-column ps-0">
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxPriceRange">
+                                                            <label class="form-check-label" for="firstCheckboxPriceRange">
+                                                                <p class="mb-0">550-699<span class="text-secondary ms-1">(27)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxPriceRange">
+                                                            <label class="form-check-label" for="secondCheckboxPriceRange">
+                                                                <p class="mb-0">700-999<span class="text-secondary ms-1">(38)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxPriceRange">
+                                                            <label class="form-check-label" for="thirdCheckboxPriceRange">
+                                                                <p class="mb-0">1000-1999<span class="text-secondary ms-1">(48)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckboxPriceRange">
+                                                            <label class="form-check-label" for="fourthCheckboxPriceRange">
+                                                                <p class="mb-0">2000-3999<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckboxPriceRange">
+                                                            <label class="form-check-label" for="fifthCheckboxPriceRange">
+                                                                <p class="mb-0">4000+<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    <div class="accordion-item border-0">
+                                            <h2 class="accordion-header">
+                                                <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSetupTime" aria-expanded="true" aria-controls="panelsStayOpen-collapseSetupTime">
+                                                    Set-up Time
+                                                </button>
+                                            </h2>
+                                            <div id="panelsStayOpen-collapseSetupTime" class="accordion-collapse collapse show">
+                                                <div class="accordion-body">
+                                                    <ul class="d-flex gap-3 flex-column ps-0">
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxSetupTime">
+                                                            <label class="form-check-label" for="firstCheckboxSetupTime">
+                                                                <p class="mb-0">1+ (Fast)<span class="text-secondary ms-1">(27)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxSetupTime">
+                                                            <label class="form-check-label" for="secondCheckboxSetupTime">
+                                                                <p class="mb-0">5+ (Easy)<span class="text-secondary ms-1">(38)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxSetupTime">
+                                                            <label class="form-check-label" for="thirdCheckboxSetupTime">
+                                                                <p class="mb-0">10+ (Average)<span class="text-secondary ms-1">(48)</span></p>
+                                                            </label>
+                                                        </li>
+                                                        <li class="list-group-item">
+                                                            <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckboxSetupTime">
+                                                            <label class="form-check-label" for="fourthCheckboxSetupTime">
+                                                                <p class="mb-0">20+ (Expert)<span class="text-secondary ms-1">(8)</span></p>
+                                                            </label>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-9">
+                            <div class="row d-flex align-items-center flex-wrap mb-4">
+                                <div class="col-4">
+                                    <div class="card1 position-relative card rounded-4 border-0 shadow-sm" style="width: 20rem;">
+                                            <img src="./../assets/pictures/png/img1.png" class="card-img-top hover-image" alt="card">
+                                            <div class="card-body d-flex flex-wrap justify-content-center pb-0">
+                                                <p class="card-text fw-bold">Contour 10x4</p>
+                                            </div>
+                                            <div class="card-body d-flex flex-wrap justify-content-center pt-0">
+                                                <p class="card-text">8123,99 €</p>
+                                            </div>
+                                            <div class="sticker__new position-absolute">new</div>
+                                        </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card2 position-relative card rounded-4 border-0 shadow-sm" style="width: 20rem;">
+                                            <img src="./../assets/pictures/png/img2.png" class="card-img-top hover-image" alt="card">
+                                            <div class="card-body d-flex flex-wrap justify-content-center pb-0">
+                                                <p class="card-text fw-bold">Contour 10x4</p>
+                                            </div>
+                                            <div class="card-body d-flex flex-wrap justify-content-center pt-0">
+                                                <p class="card-text">8123,99 €</p>
+                                            </div>
+                                            <div class="sticker__best position-absolute"></div>
+                                            <div class="sticker__team position-absolute"></div>
+                                        </div>
+                                </div>
+                                <div class="col-4">
+                                        <div class="card rounded-4 border-0 shadow-sm" style="width: 20rem;">
+                                            <img src="./../assets/pictures/png/img3.png" class="card-img-top hover-image" alt="card">
+                                            <div class="card-body d-flex flex-wrap justify-content-center pb-0">
+                                                <p class="card-text fw-bold">Contour 10x4</p>
+                                            </div>
+                                            <div class="card-body d-flex flex-wrap justify-content-center pt-0">
+                                                <p class="card-text">8123,99 €</p>
+                                            </div>
+                                        </div>
+                                    </div>
+                            </div>
+                            <div class="row d-flex align-items-center flex-wrap mb-4">
+                                <div class="col-4">
+                                    <div class="card3 position-relative card rounded-4 border-0 shadow-sm" style="width: 20rem;">
+                                        <img src="./../assets/pictures/png/img1.png" class="card-img-top hover-image" alt="card">
+                                        <div class="card-body d-flex flex-wrap justify-content-center pb-0">
+                                            <p class="card-text fw-bold">Contour 10x4</p>
+                                        </div>
+                                        <div class="card-body d-flex flex-wrap justify-content-center pt-0">
+                                            <p class="card-text">8123,99 €</p>
+                                        </div>
+                                        <div class="sticker__best position-absolute"></div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card rounded-4 border-0 shadow-sm" style="width: 20rem;">
+                                        <img src="./../assets/pictures/png/img1.png" class="card-img-top hover-image" alt="card">
+                                        <div class="card-body d-flex flex-wrap justify-content-center pb-0">
+                                            <p class="card-text fw-bold">Contour 10x4</p>
+                                        </div>
+                                        <div class="card-body d-flex flex-wrap justify-content-center pt-0">
+                                            <p class="card-text">8123,99 €</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card1 card rounded-4 border-0 shadow-sm" style="width: 20rem;">
+                                        <img src="./../assets/pictures/png/img3.png" class="card-img-top hover-image" alt="card">
+                                        <div class="card-body d-flex flex-wrap justify-content-center pb-0">
+                                            <p class="card-text fw-bold">Contour 10x4</p>
+                                        </div>
+                                        <div class="card-body d-flex flex-wrap justify-content-center pt-0">
+                                            <p class="card-text">8123,99 €</p>
+                                        </div>
+                                        <div class="sticker__new position-absolute">new</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-center flex-wrap mb-4">
+                            <div class="col-4">
+                                <div class="card1 position-relative card rounded-4 border-0 shadow-sm" style="width: 20rem;">
+                                    <img src="./../assets/pictures/png/img1.png" class="card-img-top hover-image" alt="card">
+                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
+                                        <p class="card-text fw-bold">Contour 10x4</p>
+                                    </div>
+                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
+                                        <p class="card-text">8123,99 €</p>
+                                    </div>
+                                    <div class="sticker__new position-absolute">new</div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card2 position-relative card rounded-4 border-0 shadow-sm" style="width: 20rem;">
+                                    <img src="./../assets/pictures/png/img2.png" class="card-img-top hover-image" alt="card">
+                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
+                                        <p class="card-text fw-bold">Contour 10x4</p>
+                                    </div>
+                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
+                                        <p class="card-text">8123,99 €</p>
+                                    </div>
+                                    <div class="sticker__best position-absolute"></div>
+                                    <div class="sticker__team position-absolute"></div>
+                                </div>
+                            </div>
+                            <div class="col-4">
+                                <div class="card rounded-4 border-0 shadow-sm" style="width: 20rem;">
+                                    <img src="./../assets/pictures/png/img3.png" class="card-img-top hover-image" alt="card">
+                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
+                                        <p class="card-text fw-bold">Contour 10x4</p>
+                                    </div>
+                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
+                                        <p class="card-text">8123,99 €</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                            <div class="row d-flex align-items-center flex-wrap mb-4">
+                                <div class="col-4">
+                                    <div class="card1 position-relative card rounded-4 border-0 shadow-sm" style="width: 20rem;">
+                                        <img src="./../assets/pictures/png/img1.png" class="card-img-top hover-image" alt="card">
+                                        <div class="card-body d-flex flex-wrap justify-content-center pb-0">
+                                            <p class="card-text fw-bold">Contour 10x4</p>
+                                        </div>
+                                        <div class="card-body d-flex flex-wrap justify-content-center pt-0">
+                                            <p class="card-text">8123,99 €</p>
+                                        </div>
+                                        <div class="sticker__new position-absolute">new</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card2 position-relative card rounded-4 border-0 shadow-sm" style="width: 20rem;">
+                                        <img src="./../assets/pictures/png/img2.png" class="card-img-top hover-image" alt="card">
+                                        <div class="card-body d-flex flex-wrap justify-content-center pb-0">
+                                            <p class="card-text fw-bold">Contour 10x4</p>
+                                        </div>
+                                        <div class="card-body d-flex flex-wrap justify-content-center pt-0">
+                                            <p class="card-text">8123,99 €</p>
+                                        </div>
+                                        <div class="sticker__best position-absolute"></div>
+                                        <div class="sticker__team position-absolute"></div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card rounded-4 border-0 shadow-sm" style="width: 20rem;">
+                                        <img src="./../assets/pictures/png/img3.png" class="card-img-top hover-image" alt="card">
+                                        <div class="card-body d-flex flex-wrap justify-content-center pb-0">
+                                            <p class="card-text fw-bold">Contour 10x4</p>
+                                        </div>
+                                        <div class="card-body d-flex flex-wrap justify-content-center pt-0">
+                                            <p class="card-text">8123,99 €</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row d-flex align-items-center flex-wrap mb-4">
+                                <div class="col-4">
+                                    <div class="card1 position-relative card rounded-4 border-0 shadow-sm" style="width: 20rem;">
+                                        <img src="./../assets/pictures/png/img1.png" class="card-img-top hover-image" alt="card">
+                                        <div class="card-body d-flex flex-wrap justify-content-center pb-0">
+                                            <p class="card-text fw-bold">Contour 10x4</p>
+                                        </div>
+                                        <div class="card-body d-flex flex-wrap justify-content-center pt-0">
+                                            <p class="card-text">8123,99 €</p>
+                                        </div>
+                                        <div class="sticker__new position-absolute">new</div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card2 position-relative card rounded-4 border-0 shadow-sm" style="width: 20rem;">
+                                        <img src="./../assets/pictures/png/img2.png" class="card-img-top hover-image" alt="card">
+                                        <div class="card-body d-flex flex-wrap justify-content-center pb-0">
+                                            <p class="card-text fw-bold">Contour 10x4</p>
+                                        </div>
+                                        <div class="card-body d-flex flex-wrap justify-content-center pt-0">
+                                            <p class="card-text">8123,99 €</p>
+                                        </div>
+                                        <div class="sticker__best position-absolute"></div>
+                                        <div class="sticker__team position-absolute"></div>
+                                    </div>
+                                </div>
+                                <div class="col-4">
+                                    <div class="card rounded-4 border-0 shadow-sm" style="width: 20rem;">
+                                        <img src="./../assets/pictures/png/img3.png" class="card-img-top hover-image" alt="card">
+                                        <div class="card-body d-flex flex-wrap justify-content-center pb-0">
+                                            <p class="card-text fw-bold">Contour 10x4</p>
+                                        </div>
+                                        <div class="card-body d-flex flex-wrap justify-content-center pt-0">
+                                            <p class="card-text">8123,99 €</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="content__controls d-flex justify-content-between align-items-center">
+                                    <div class="content__pagination">
+                                        <nav aria-label="Page navigation">
+                                            <ul class="pagination gap-3 align-items-center m-0">
+                                                <li class="page-item disabled">
+                                                    <a class="page-link px-5 rounded-pill"><i class="bi bi-arrow-left"></i></a>
+                                                </li>
+                                                <p class="m-0 text-secondary-emphasis">Page</p>
+                                                <li class="page-item"><a class="page-link px-5 rounded-pill text-black fw-bold" href="#">1</a></li>
+                                                <p class="m-0 text-secondary-emphasis">of 128</p>
+                                                <li class="page-item actives">
+                                                    <a class="page-link px-5 rounded-pill" href="#"><i class="bi bi-arrow-right"></i></a>
+                                                </li>
+                                            </ul>
+                                        </nav>
+                                    </div>
+                                    <div class="content__dropdown">
+                                        <div class="dropdown">
+                                                <button class="btn dropdown-toggle rounded-pill bg-body px-4 py-1 border border-light-subtle fw-bold text-black fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                                    50
+                                                </button>
+                                                <ul class="dropdown-menu">
+                                                    <li><a class="dropdown-item" href="#">1</a></li>
+                                                    <li><a class="dropdown-item" href="#">2</a></li>
+                                                    <li><a class="dropdown-item" href="#">3</a></li>
+                                                </ul>
+                                            </div>
+                                    </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="container">
+                <div class="row">
+                    <div class="col-3">
+                        <div class="d-flex flex-column gap-4 me-5">
+                            <div class="row">
+                                <div class="footer-top_logo">
+                                    <img src="./../assets/pictures/svg/logo_footer.svg" alt="logo">
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="d-flex gap-3">
+                                    <i class="bi bi-geo-alt-fill text-white fs-4"></i>
+                                    <p class="mb-0">344, rue Jardin Colar - 34130 LANSARGUES - FRANCE</p>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="d-flex gap-3">
+                                    <a class="text-reset" href="tel:+33(0)499632050">
+                                            <i class="bi bi-telephone-fill text-white fs-4 pe-2"></i>
+                                            <span>+33(0)499632050</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="d-flex gap-3">
+                                    <a class="text-reset" href="mailto:sales@duodisplay.com">
+                                            <i class="bi bi-envelope-fill text-white fs-4 pe-2"></i>
+                                            <span>sales@duodisplay.com</span>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="row">
+                                <div class="footer-top_picture">
+                                    <img src="./../assets/pictures/svg/made_in_france_new.svg" alt="made">
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-7">
+                      <div class="row d-flex">
+                          <div class="col-3">
+                              <div class="list-group">
+                                  <p class="text-white fs-4 fw-bold">Products</p>
+                                  <a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">
+                                      Banner stands
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Display Wall</a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Counters</a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Outdoor</a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Frames</a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Stands</a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Outdoor</a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Frames</a>
+                                  <a class="list-group-item list-group-item-action disabled bg-transparent border-0 p-0 mb-1" aria-disabled="true">Stands</a>
+                              </div>
+                          </div>
+                          <div class="col-3">
+                              <div class="list-group">
+                                  <p class="text-white fs-4 fw-bold">Applications</p>
+                                  <a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">
+                                      Tradeshows
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Events</a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Road-shows</a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Decoration</a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Retail</a>
+                                  <a class="list-group-item list-group-item-action disabled bg-transparent border-0 p-0 mb-1" aria-disabled="true">Printing</a>
+                              </div>
+                          </div>
+                          <div class="col-3">
+                              <div class="list-group">
+                                  <p class="text-white fs-4 fw-bold">My Profile</p>
+                                  <a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">
+                                      Dashboard
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Account</a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Orders</a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Quotes</a>
+                                  <a class="list-group-item list-group-item-action disabled bg-transparent border-0 p-0 mb-1" aria-disabled="true">My Contacts</a>
+                              </div>
+                          </div>
+                          <div class="col-3">
+                              <div class="list-group">
+                                  <p class="text-white fs-4 fw-bold">Duo Display</p>
+                                  <a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">
+                                      About Duo
+                                  </a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">General terms</a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Warranty</a>
+                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Legal notice</a>
+                                  <a class="list-group-item list-group-item-action disabled bg-transparent border-0 p-0 mb-1" aria-disabled="true">Contact us</a>
+                              </div>
+                          </div>
+                      </div>
+                    </div>
+                    <div class="col-2">
+                        <div class="d-flex flex-column justify-content-end">
+                             <p class="text-white fs-4 fw-bold">Newsletter</p>
+                            <button type="button" class="btn btn-outline-secondary rounded-pill mb-2">
+                                <span>Your mail address</span>
+                                <i class="bi bi-caret-right-fill text-primary ms-3"></i>
+                            </button>
+                            <div class="footer-top_lang mb-5">
                                 <div class="dropdown">
-                                    <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
+                                    <button class="btn btn-outline-secondary rounded-pill dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
                                         <i class="bi bi-globe"></i>
-                                        <span>English</span>
+                                        <span class="text-white">English</span>
                                     </button>
                                     <ul class="dropdown-menu">
                                         <li><a class="dropdown-item" href="#">Ukrainian</a></li>
@@ -35,800 +801,86 @@
                                     </ul>
                                 </div>
                             </div>
+                            <div class="row">
+                                <div class="footer-top_social d-flex gap-1">
+                                    <img src="./../assets/pictures/svg/social/1.svg" alt="logo">
+                                    <img src="./../assets/pictures/svg/social/2.svg" alt="logo">
+                                    <img src="./../assets/pictures/svg/social/3.svg" alt="logo">
+                                    <img src="./../assets/pictures/svg/social/4.svg" alt="logo">
+                                    <img src="./../assets/pictures/svg/social/5.svg" alt="logo">
+                                    <img src="./../assets/pictures/svg/social/6.svg" alt="logo">
+                                </div>
+                            </div>
                         </div>
-                     </div>
+                    </div>
                 </div>
             </div>
-    <div class="header_bottom shadow bg-body py-2">
-             <nav class="navbar navbar-expand-lg">
+        </div>
+        <div class="footer-bottom py-2">
             <div class="container">
-                <a class="navbar-brand me-5" href="#">
-                    <img src="../assets/pictures/svg/logo_header.svg" alt="DUO Shop">
-                </a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-                        <li class="nav-item me-5">
-                            <a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#searchModal">
-                                <i class="bi bi-search"></i>
-                            </a>
-                        </li>
-                        <li class="nav-item dropdown me-2">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Products
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
-                                <li><a class="dropdown-item" href="#">ALorem ipsum.</a></li>
-                                <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item dropdown me-2">
-                            <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Applications
-                            </a>
-                            <ul class="dropdown-menu">
-                                <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
-                                <li><a class="dropdown-item" href="#">ALorem ipsum.</a></li>
-                                <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
-                            </ul>
-                        </li>
-
-                        <li class="nav-item">
-                            <a class="nav-link" href="#">Documentation</a>
-                        </li>
-                    </ul>
-                    <div>
-                        <ul class="list-unstyled d-flex align-items-center gap-3 m-0">
-                            <li>
-                                <a href="#" class="text-reset fs-5">
-                                    <i class="bi bi-person"></i>
-                                </a>
-                            </li>
-                            <li>
-                                <a href="#" class="text-reset fs-5">
-                                    <i class="bi bi-cart"></i>
-                                </a>
-                            </li>
-                        </ul>
-                    </div>
+                <div class="row">
+                    <p class="m-0"><i class="bi bi-c-circle"></i>
+                    <span>2021 Duo Industrie. All rights reserved. From Duo with</span>
+                        <i class="bi bi-heart"></i></p>
                 </div>
-            </div>
-        </nav>
-    </div>
-</header>
-<main>
-    <section class="breadcrumbs pt-4 pb-2">
-        <div class="container">
-            <div class="row">
-                <div class="col-12">
-                    <nav aria-label="breadcrumb">
-                        <ol class="breadcrumb">
-                            <li class="breadcrumb-item"><a href="#">Products</a></li>
-                            <li class="breadcrumb-item"><a href="#">Display Wall</a></li>
-                            <li class="breadcrumb-item active" aria-current="page">Products</li>
-                        </ol>
-                    </nav>
+                <div class="footer-bottom__scroll position-fixed">
+                    <button type="button" class="btn-primary rounded-circle bg-primary border-0">
+                        <i class="bi bi-arrow-up text-white"></i>
+                    </button>
                 </div>
             </div>
         </div>
-    </section>
-    <section class="page-heading pb-4">
-        <div class="container">
-            <div class="row col-12">
-                <h1>Display Wall</h1>
-            </div>
-        </div>
-    </section>
-    <section class="display pb-4">
-        <div class="container">
-            <div class="row d-flex align-items-center">
-                <div class="col-3">
-                    <div class="d-grid dropdown ">
-                            <button class="dropdown-toggle text-start bg-body rounded-pill border-0 shadow-sm py-1 px-3" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                Display Wall
-                            </button>
-                        <ul class="dropdown-menu">
-                            <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
-                            <li><a class="dropdown-item" href="#">Lorem ipsum.</a></li>
-                        </ul>
-                    </div>
+    </footer>
+
+    <!-- Modal Search and canvas-->
+    <div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
                 </div>
-                <div class="col-9">
-                    <form class="input-group">
-                        <input class="form-control text-secondary border-end-0 rounded-start-pill border-white shadow-sm" list="datalistOptions" id="exampleDataList" placeholder="Search" aria-describedby="button-addon2">
-                        <button class="btn border-start-0 rounded-end-circle bg-body shadow-sm" type="button" id="#searchModal2"><i class="bi bi-search"></i></button>
-                        <datalist id="datalistOptions">
-                            <option value="Contour">
-                            <option value="lorem">
-                            <option value="lorem">
-                            <option value="lorem">
-                            <option value="lorem">
-                        </datalist>
+                <div class="modal-body">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
                     </form>
                 </div>
-            </div>
-        </div>
-    </section>
-    <section class="content">
-        <div class="container">
-            <div class="row pb-5">
-                <div class="col-3">
-                    <div class="bg-body rounded-4 shadow-sm row d-flex align-items-center m-0 px-0 py-3 gap-4">
-                        <div class="row m-0">
-                            <div class="col-12 d-flex align-items-center justify-content-between">
-                                <p class="m-0">23 Results</p>
-                                <a href="#" class="text-danger"><i class="bi bi-x-circle me-2"></i><span>Clear all Filters</span></a>
-                            </div>
-                        </div>
-                        <div class="row m-0 px-0">
-                            <div class="accordion" id="accordionPanelsStaySubcategory">
-                                <div class="accordion-item border-0">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSubcategory" aria-expanded="true" aria-controls="panelsStayOpen-collapseSubcategory">
-                                                Subcategory
-                                            </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseSubcategory" class="accordion-collapse collapse show">
-                                            <div class="accordion-body">
-                                                <ul class="d-flex gap-3 flex-column ps-0">
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxSubcategory">
-                                                        <label class="form-check-label" for="firstCheckboxSubcategory">
-                                                            <p class="mb-0">Xpression<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxSubcategory">
-                                                        <label class="form-check-label" for="secondCheckboxSubcategory">
-                                                            <p class="mb-0">Xtension<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxSubcategory">
-                                                        <label class="form-check-label" for="thirdCheckboxSubcategory">
-                                                            <p class="mb-0">Virage<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckboxSubcategory">
-                                                        <label class="form-check-label" for="fourthCheckboxSubcategory">
-                                                            <p class="mb-0">Contour<span class="text-secondary ms-1">(4)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckboxSubcategory">
-                                                        <label class="form-check-label" for="fifthCheckboxSubcategory">
-                                                            <p class="mb-0">Xperience<span class="text-secondary ms-1">(4)</span></p>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <div class="accordion-item border-0">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseType" aria-expanded="true" aria-controls="panelsStayOpen-collapseType">
-                                                Type
-                                            </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseType" class="accordion-collapse collapse show">
-                                            <div class="accordion-body">
-                                                <ul class="d-flex gap-3 flex-column ps-0">
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxType">
-                                                        <label class="form-check-label" for="firstCheckboxType">
-                                                            <p class="mb-0">Pop-up<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxType">
-                                                        <label class="form-check-label" for="secondCheckboxType">
-                                                            <p class="mb-0">Tubar<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxType">
-                                                        <label class="form-check-label" for="thirdCheckboxType">
-                                                            <p class="mb-0">Table top<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <div class="accordion-item border-0">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseFeatures" aria-expanded="true" aria-controls="panelsStayOpen-collapseFeatures">
-                                                Features
-                                            </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseFeatures" class="accordion-collapse collapse show">
-                                            <div class="accordion-body">
-                                                <ul class="d-flex gap-3 flex-column ps-0">
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxFeatures">
-                                                        <label class="form-check-label" for="firstCheckboxFeatures">
-                                                            <p class="mb-0">Backlit<span class="text-secondary ms-1">(7)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxFeatures">
-                                                        <label class="form-check-label" for="secondCheckboxFeatures">
-                                                            <p class="mb-0">TV Mount<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxFeatures">
-                                                        <label class="form-check-label" for="thirdCheckboxFeatures">
-                                                            <p class="mb-0">Shelving<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckboxFeatures">
-                                                        <label class="form-check-label" for="fourthCheckboxFeatures">
-                                                            <p class="mb-0">Arch<span class="text-secondary ms-1">(4)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckboxFeatures">
-                                                        <label class="form-check-label" for="fifthCheckboxFeatures">
-                                                            <p class="mb-0">Double sided<span class="text-secondary ms-1">(4)</span></p>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <div class="accordion-item border-0">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseWidth" aria-expanded="true" aria-controls="panelsStayOpen-collapseWidth">
-                                                Width
-                                            </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseWidth" class="accordion-collapse collapse show">
-                                            <div class="accordion-body">
-                                                <ul class="d-flex gap-3 flex-column ps-0">
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxWidth">
-                                                        <label class="form-check-label" for="firstCheckboxWidth">
-                                                            <p class="mb-0">2.5<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxWidth">
-                                                        <label class="form-check-label" for="secondCheckboxWidth">
-                                                            <p class="mb-0">5<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxWidth">
-                                                        <label class="form-check-label" for="thirdCheckboxWidth">
-                                                            <p class="mb-0">8<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckboxWidth">
-                                                        <label class="form-check-label" for="fourthCheckboxWidth">
-                                                            <p class="mb-0">10<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckboxWidth">
-                                                        <label class="form-check-label" for="fifthCheckboxWidth">
-                                                            <p class="mb-0">20<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <div class="accordion-item border-0">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseHeight" aria-expanded="true" aria-controls="panelsStayOpen-collapseHeight">
-                                                Height
-                                            </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseHeight" class="accordion-collapse collapse show">
-                                            <div class="accordion-body">
-                                                <ul class="d-flex gap-3 flex-column ps-0">
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxHeight">
-                                                        <label class="form-check-label" for="firstCheckboxHeight">
-                                                            <p class="mb-0">4<span class="text-secondary ms-1">(7)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxHeight">
-                                                        <label class="form-check-label" for="secondCheckboxHeight">
-                                                            <p class="mb-0">8<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxHeight">
-                                                        <label class="form-check-label" for="thirdCheckboxHeight">
-                                                            <p class="mb-0">10<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <div class="accordion-item border-0">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseForm" aria-expanded="true" aria-controls="panelsStayOpen-collapseForm">
-                                                Form
-                                            </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseForm" class="accordion-collapse collapse show">
-                                            <div class="accordion-body">
-                                                <ul class="d-flex gap-3 flex-column ps-0">
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxForm">
-                                                        <label class="form-check-label" for="firstCheckboxForm">
-                                                            <p class="mb-0">Straight<span class="text-secondary ms-1">(7)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxForm">
-                                                        <label class="form-check-label" for="secondCheckboxForm">
-                                                            <p class="mb-0">Curved<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <div class="accordion-item border-0">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapsePriceRange" aria-expanded="true" aria-controls="panelsStayOpen-collapsePriceRange">
-                                                Price Range
-                                            </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapsePriceRange" class="accordion-collapse collapse show">
-                                            <div class="accordion-body">
-                                                <ul class="d-flex gap-3 flex-column ps-0">
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxPriceRange">
-                                                        <label class="form-check-label" for="firstCheckboxPriceRange">
-                                                            <p class="mb-0">550-699<span class="text-secondary ms-1">(27)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxPriceRange">
-                                                        <label class="form-check-label" for="secondCheckboxPriceRange">
-                                                            <p class="mb-0">700-999<span class="text-secondary ms-1">(38)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxPriceRange">
-                                                        <label class="form-check-label" for="thirdCheckboxPriceRange">
-                                                            <p class="mb-0">1000-1999<span class="text-secondary ms-1">(48)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckboxPriceRange">
-                                                        <label class="form-check-label" for="fourthCheckboxPriceRange">
-                                                            <p class="mb-0">2000-3999<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="fifthCheckboxPriceRange">
-                                                        <label class="form-check-label" for="fifthCheckboxPriceRange">
-                                                            <p class="mb-0">4000+<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                    </li>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                                <div class="accordion-item border-0">
-                                        <h2 class="accordion-header">
-                                            <button class="accordion-button fw-bold bg-body" type="button" data-bs-toggle="collapse" data-bs-target="#panelsStayOpen-collapseSetupTime" aria-expanded="true" aria-controls="panelsStayOpen-collapseSetupTime">
-                                                Set-up Time
-                                            </button>
-                                        </h2>
-                                        <div id="panelsStayOpen-collapseSetupTime" class="accordion-collapse collapse show">
-                                            <div class="accordion-body">
-                                                <ul class="d-flex gap-3 flex-column ps-0">
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="firstCheckboxSetupTime">
-                                                        <label class="form-check-label" for="firstCheckboxSetupTime">
-                                                            <p class="mb-0">1+ (Fast)<span class="text-secondary ms-1">(27)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="secondCheckboxSetupTime">
-                                                        <label class="form-check-label" for="secondCheckboxSetupTime">
-                                                            <p class="mb-0">5+ (Easy)<span class="text-secondary ms-1">(38)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="thirdCheckboxSetupTime">
-                                                        <label class="form-check-label" for="thirdCheckboxSetupTime">
-                                                            <p class="mb-0">10+ (Average)<span class="text-secondary ms-1">(48)</span></p>
-                                                        </label>
-                                                    </li>
-                                                    <li class="list-group-item">
-                                                        <input class="form-check-input me-1" type="checkbox" value="" id="fourthCheckboxSetupTime">
-                                                        <label class="form-check-label" for="fourthCheckboxSetupTime">
-                                                            <p class="mb-0">20+ (Expert)<span class="text-secondary ms-1">(8)</span></p>
-                                                        </label>
-                                                </ul>
-                                            </div>
-                                        </div>
-                                    </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-9">
-                    <div class="row d-flex justify-content-between flex-wrap gap-3">
-                        <div class="row d-flex align-items-center flex-wrap">
-                            <div class="col-4">
-                                <div class="card1 card rounded-4 border-0 shadow-sm" style="width: 20rem;">
-                                    <img src="./../assets/pictures/png/img1.png" class="card-img-top" alt="card">
-                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
-                                        <p class="card-text fw-bold">Contour 10x4</p>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
-                                        <p class="card-text">8123,99 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card2 card rounded-4 border-0 shadow-sm" style="width: 20rem;">
-                                    <img src="./../assets/pictures/png/img2.png" class="card-img-top" alt="card">
-                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
-                                        <p class="card-text fw-bold">Contour 10x4</p>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
-                                        <p class="card-text">8123,99 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card rounded-4 border-0 shadow-sm" style="width: 20rem;">
-                                    <img src="./../assets/pictures/png/img3.png" class="card-img-top" alt="card">
-                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
-                                        <p class="card-text fw-bold">Contour 10x4</p>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
-                                        <p class="card-text">8123,99 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex align-items-center flex-wrap">
-                            <div class="col-4">
-                                <div class="card3 card rounded-4 border-0 shadow-sm" style="width: 20rem;">
-                                    <img src="./../assets/pictures/png/img1.png" class="card-img-top" alt="card">
-                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
-                                        <p class="card-text fw-bold">Contour 10x4</p>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
-                                        <p class="card-text">8123,99 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card rounded-4 border-0 shadow-sm" style="width: 20rem;">
-                                    <img src="./../assets/pictures/png/img1.png" class="card-img-top" alt="card">
-                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
-                                        <p class="card-text fw-bold">Contour 10x4</p>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
-                                        <p class="card-text">8123,99 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card1 card rounded-4 border-0 shadow-sm" style="width: 20rem;">
-                                    <img src="./../assets/pictures/png/img3.png" class="card-img-top" alt="card">
-                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
-                                        <p class="card-text fw-bold">Contour 10x4</p>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
-                                        <p class="card-text">8123,99 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex align-items-center flex-wrap">
-                            <div class="col-4">
-                                <div class="card1 card rounded-4 border-0 shadow-sm" style="width: 20rem;">
-                                    <img src="./../assets/pictures/png/img1.png" class="card-img-top" alt="card">
-                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
-                                        <p class="card-text fw-bold">Contour 10x4</p>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
-                                        <p class="card-text">8123,99 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card2 card rounded-4 border-0 shadow-sm" style="width: 20rem;">
-                                    <img src="./../assets/pictures/png/img2.png" class="card-img-top" alt="card">
-                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
-                                        <p class="card-text fw-bold">Contour 10x4</p>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
-                                        <p class="card-text">8123,99 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card rounded-4 border-0 shadow-sm" style="width: 20rem;">
-                                    <img src="./../assets/pictures/png/img3.png" class="card-img-top" alt="card">
-                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
-                                        <p class="card-text fw-bold">Contour 10x4</p>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
-                                        <p class="card-text">8123,99 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex align-items-center flex-wrap">
-                            <div class="col-4">
-                                <div class="card1 card rounded-4 border-0 shadow-sm" style="width: 20rem;">
-                                    <img src="./../assets/pictures/png/img1.png" class="card-img-top" alt="card">
-                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
-                                        <p class="card-text fw-bold">Contour 10x4</p>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
-                                        <p class="card-text">8123,99 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card2 card rounded-4 border-0 shadow-sm" style="width: 20rem;">
-                                    <img src="./../assets/pictures/png/img2.png" class="card-img-top" alt="card">
-                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
-                                        <p class="card-text fw-bold">Contour 10x4</p>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
-                                        <p class="card-text">8123,99 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card rounded-4 border-0 shadow-sm" style="width: 20rem;">
-                                    <img src="./../assets/pictures/png/img3.png" class="card-img-top" alt="card">
-                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
-                                        <p class="card-text fw-bold">Contour 10x4</p>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
-                                        <p class="card-text">8123,99 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row d-flex align-items-center flex-wrap mb-4">
-                            <div class="col-4">
-                                <div class="card1 card rounded-4 border-0 shadow-sm" style="width: 20rem;">
-                                    <img src="./../assets/pictures/png/img1.png" class="card-img-top" alt="card">
-                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
-                                        <p class="card-text fw-bold">Contour 10x4</p>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
-                                        <p class="card-text">8123,99 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card2 card rounded-4 border-0 shadow-sm" style="width: 20rem;">
-                                    <img src="./../assets/pictures/png/img2.png" class="card-img-top" alt="card">
-                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
-                                        <p class="card-text fw-bold">Contour 10x4</p>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
-                                        <p class="card-text">8123,99 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                            <div class="col-4">
-                                <div class="card rounded-4 border-0 shadow-sm" style="width: 20rem;">
-                                    <img src="./../assets/pictures/png/img3.png" class="card-img-top" alt="card">
-                                    <div class="card-body d-flex flex-wrap justify-content-center pb-0">
-                                        <p class="card-text fw-bold">Contour 10x4</p>
-                                    </div>
-                                    <div class="card-body d-flex flex-wrap justify-content-center pt-0">
-                                        <p class="card-text">8123,99 €</p>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="d-flex align-items-center justify-content-between">
-                                <div class="content-pagination">
-                                    <nav aria-label="Page navigation">
-                                        <ul class="pagination gap-3 align-items-center m-0">
-                                            <li class="page-item disabled">
-                                                <a class="page-link px-5 rounded-pill"><i class="bi bi-arrow-left"></i></a>
-                                            </li>
-                                            <p class="m-0 text-secondary-emphasis">Page</p>
-                                            <li class="page-item"><a class="page-link px-5 rounded-pill text-black fw-bold" href="#">1</a></li>
-                                            <p class="m-0 text-secondary-emphasis">of 128</p>
-                                            <li class="page-item actives">
-                                                <a class="page-link px-5 rounded-pill" href="#"><i class="bi bi-arrow-right"></i></a>
-                                            </li>
-                                        </ul>
-                                    </nav>
-                                </div>
-                                <div class="content-dropdown">
-                                    <div class="dropdown">
-                                        <button class="btn dropdown-toggle rounded-pill bg-body px-4 py-1 border border-light-subtle fw-bold text-black fs-5" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                            50
-                                        </button>
-                                        <ul class="dropdown-menu">
-                                            <li><a class="dropdown-item" href="#">1</a></li>
-                                            <li><a class="dropdown-item" href="#">2</a></li>
-                                            <li><a class="dropdown-item" href="#">3</a></li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-</main>
-<footer class="footer">
-    <div class="footer-top">
-        <div class="container">
-            <div class="row">
-                <div class="col-3">
-                    <div class="d-flex flex-column gap-4 me-5">
-                        <div class="row">
-                            <div class="footer-top_logo">
-                                <img src="./../assets/pictures/svg/logo_footer.svg" alt="logo">
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="d-flex gap-3">
-                                <i class="bi bi-geo-alt-fill text-white fs-4"></i>
-                                <p class="mb-0">344, rue Jardin Colar - 34130 LANSARGUES - FRANCE</p>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="d-flex gap-3">
-                                <a class="text-reset" href="tel:+33(0)499632050">
-                                        <i class="bi bi-telephone-fill text-white fs-4 pe-2"></i>
-                                        <span>+33(0)499632050</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="d-flex gap-3">
-                                <a class="text-reset" href="mailto:sales@duodisplay.com">
-                                        <i class="bi bi-envelope-fill text-white fs-4 pe-2"></i>
-                                        <span>sales@duodisplay.com</span>
-                                </a>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="footer-top_picture">
-                                <img src="./../assets/pictures/svg/made_in_france_new.svg" alt="made">
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="col-6">
-                  <div class="row d-flex">
-                      <div class="col-3">
-                          <div class="list-group">
-                              <p class="text-white fs-4 fw-bold">Products</p>
-                              <a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">
-                                  Banner stands
-                              </a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Display Wall</a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Counters</a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Outdoor</a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Frames</a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Stands</a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Outdoor</a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Frames</a>
-                              <a class="list-group-item list-group-item-action disabled bg-transparent border-0 p-0 mb-1" aria-disabled="true">Stands</a>
-                          </div>
-                      </div>
-                      <div class="col-3">
-                          <div class="list-group">
-                              <p class="text-white fs-4 fw-bold">Applications</p>
-                              <a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">
-                                  Tradeshows
-                              </a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Events</a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Road-shows</a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Decoration</a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Retail</a>
-                              <a class="list-group-item list-group-item-action disabled bg-transparent border-0 p-0 mb-1" aria-disabled="true">Printing</a>
-                          </div>
-                      </div>
-                      <div class="col-3">
-                          <div class="list-group">
-                              <p class="text-white fs-4 fw-bold">My Profile</p>
-                              <a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">
-                                  Dashboard
-                              </a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Account</a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Orders</a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Quotes</a>
-                              <a class="list-group-item list-group-item-action disabled bg-transparent border-0 p-0 mb-1" aria-disabled="true">My Contacts</a>
-                          </div>
-                      </div>
-                      <div class="col-3">
-                          <div class="list-group">
-                              <p class="text-white fs-4 fw-bold">Duo Display</p>
-                              <a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">
-                                  About Duo
-                              </a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">General terms</a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Warranty</a>
-                              <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Legal notice</a>
-                              <a class="list-group-item list-group-item-action disabled bg-transparent border-0 p-0 mb-1" aria-disabled="true">Contact us</a>
-                          </div>
-                      </div>
-                  </div>
-                </div>
-                <div class="col-3">
-                    <div class="d-flex flex-column justify-content-end">
-                         <p class="text-white fs-4 fw-bold">Newsletter</p>
-                        <div class="footer-top_lang">
-                            <div class="dropdown">
-                                <button class="btn btn-sm dropdown-toggle" type="button" data-bs-toggle="dropdown" aria-expanded="false">
-                                    <i class="bi bi-globe"></i>
-                                    <span>English</span>
-                                </button>
-                                <ul class="dropdown-menu">
-                                    <li><a class="dropdown-item" href="#">Ukrainian</a></li>
-                                    <li><a class="dropdown-item" href="#">Italian</a></li>
-                                    <li><a class="dropdown-item" href="#">German</a></li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
                 </div>
             </div>
         </div>
     </div>
-    <div class="footer-bottom py-2">
-        <div class="container">
-            <div class="row">
-                <p class="m-0"><i class="bi bi-c-circle"></i>
-                <span>2021 Duo Industrie. All rights reserved. From Duo with</span>
-                    <i class="bi bi-heart"></i></p>
+    <div class="modal fade" id="account" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h1 class="modal-title fs-5" id="accountModalLabel">Your account</h1>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form class="d-flex" role="search">
+                        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                        <button class="btn btn-outline-success" type="submit">Search</button>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                </div>
             </div>
         </div>
     </div>
-</footer>
+    <div class="offcanvas offcanvas-start" data-bs-scroll="true" data-bs-backdrop="false" tabindex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasScrollingLabel">Your basket</h5>
+                        <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <p>Try scrolling the rest of the page to see this option in action.</p>
+                    </div>
+                </div>
 
-<!-- Modal Search-->
-<div class="modal fade" id="searchModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h1 class="modal-title fs-5" id="exampleModalLabel">Modal title</h1>
-                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
-            </div>
-            <div class="modal-body">
-                <form class="d-flex" role="search">
-                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
-                    <button class="btn btn-outline-success" type="submit">Search</button>
-                </form>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-
-<script src="./../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./../../node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>

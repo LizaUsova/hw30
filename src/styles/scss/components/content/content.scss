@@ -1,8 +1,9 @@
 @use "./../../common/variables" as *;
+@use "./../../common/bootstrap-config" as *;
 
 .content {
   button {
-    color: $accent-blue-color;
+    color: $blue;
     padding: 12px;
   }
 
@@ -10,52 +11,87 @@
     padding: 12px;
   }
 
+  .card {
+    overflow: hidden;
+
+    .hover-image {
+      width: 100%;
+      height: auto;
+      transition: transform $duration ease-in-out;
+    }
+
+    &:hover .hover-image {
+      cursor: pointer;
+      @include slideAnimation($duration);
+    }
+
+    @keyframes slideAnimation {
+      to {
+        transform: translateX(100%);
+      }
+    }
+  }
+
   .card1 {
-    position: relative;
+    overflow: hidden;
 
-    &::after {
-      content: 'new';
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      background-color: $main-link-color;
-      font-family: $font-late-bold;
-      font-size: $f-xs;
-      color: #fff;
-      padding: 5px 12px;
-      text-transform: uppercase;
-      display: block;
-      border-radius: 33px;
-      line-height: 17px;
+    .sticker {
+      &__new {
+        right: 10px;
+        top: 10px;
+        background-color: $primary;
+        font-family: $font-late-bold;
+        font-size: $f-xs;
+        color: #fff;
+        padding: 5px 12px;
+        text-transform: uppercase;
+        display: block;
+        border-radius: 33px;
+        line-height: 17px;
 
-      width: 55px;
-      height: 25px;
+        width: 55px;
+        height: 25px;
+      }
+    }
+
+    .hover-image {
+       width: 100%;
+       height: auto;
+       transition: transform $duration ease-in-out;
+     }
+
+    &:hover .hover-image {
+      cursor: pointer;
+      @include slideAnimation($duration);
+    }
+
+    @keyframes slideAnimation {
+      to {
+        transform: translateX(100%);
+      }
     }
   }
 
   .card2 {
-    position: relative;
+    .sticker {
+      &__best {
+        content: url(./../../assets/pictures/svg/fire.svg);
+        right: 10px;
+        top: 10px;
+        background-color: $bg-light-color;
+        padding: 5px 10px;
+        display: block;
+        border-radius: 33px;
 
-    &::before {
-      content: url(./../../assets/pictures/svg/fire.svg);
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      background-color: $bg-light-color;
-      padding: 5px 10px;
-      display: block;
-      border-radius: 33px;
+        width: 55px;
+        height: 25px;
+      }
 
-      width: 55px;
-      height: 25px;
-    }
-
-      &::after {
+      &__team {
         content: url(./../../assets/pictures/svg/favorite.svg);
-        position: absolute;
         right: 10px;
         top: 40px;
-        background-color: $accent-blue-color;
+        background-color: $blue;
         padding: 2px 10px;
         display: block;
         border-radius: 33px;
@@ -65,31 +101,64 @@
       }
     }
 
-  .card3 {
-    position: relative;
+    .hover-image {
+      width: 100%;
+      height: auto;
+      transition: transform $duration ease-in-out;
+    }
 
-    &::before {
-      content: url(./../../assets/pictures/svg/fire.svg);
-      position: absolute;
-      right: 10px;
-      top: 10px;
-      background-color: $bg-light-color;
-      padding: 5px 10px;
-      display: block;
-      border-radius: 33px;
+    &:hover .hover-image {
+      cursor: pointer;
+      @include slideAnimation($duration);
+    }
 
-      width: 55px;
-      height: 25px;
+    @keyframes slideAnimation {
+      to {
+        transform: translateX(100%);
+      }
     }
   }
 
-  .pagination, .disabled a {
-      color: #fff;
+  .card3 {
+    .sticker {
+      &__best {
+        content: url(./../../assets/pictures/svg/fire.svg);
+        right: 10px;
+        top: 10px;
+        background-color: $bg-light-color;
+        padding: 5px 10px;
+        display: block;
+        border-radius: 33px;
 
+        width: 55px;
+        height: 25px;
+      }
+    }
+
+    .hover-image {
+      width: 100%;
+      height: auto;
+      transition: transform $duration ease-in-out;
+    }
+
+    &:hover .hover-image {
+      cursor: pointer;
+      @include slideAnimation($duration);
+    }
+
+    @keyframes slideAnimation {
+      to {
+        transform: translateX(100%);
+      }
+    }
+  }
+
+    &__pagination, .disabled a {
+      color: #fff;
+    }
   }
 
   .actives a {
     color: #fff;
-    background-color: $main-link-color;
-  }
+    background-color: $primary;
   }

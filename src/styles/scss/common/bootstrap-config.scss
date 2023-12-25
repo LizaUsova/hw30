@@ -7,6 +7,10 @@ $container-max-widths: (
         xxxl: 1400px,
 ) !default;
 
+$primary:  #73962C;
+$blue: #2268B4;
+$gray-800: #BDBDBE;
+
 $breadcrumb-divider: quote("—");
 $bootstrap-icons-font-dir: "./../../../node_modules/bootstrap-icons/font/fonts";
 @import "./../../../../node_modules/bootstrap/scss/bootstrap.scss";

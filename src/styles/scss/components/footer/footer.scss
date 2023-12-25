@@ -1,4 +1,5 @@
 @use "./../../common/variables" as *;
+@use "./../../common/bootstrap-config" as *;
 
 .footer {
   &-top {
@@ -18,12 +19,12 @@
 
     .list-group {
       a {
-        color: $bg-footer-link-color;
+        color: $gray-800;
       }
     }
 
     p, span {
-      color: $bg-footer-link-color;
+      color: $gray-800;
     }
   }
 
@@ -31,9 +32,28 @@
     background-color: black;
 
     p {
-      color: $bg-footer-link-color;
+      color: $gray-800;
+    }
+
+    &__scroll {
+      right: 160px;
+      bottom: 5px;
     }
   }
 
+  .dropdown {
 
+  [type=button]{
+    min-width: 210px;
+    padding: 5px 30px;
+  }
+    .btn.dropdown-toggle::after {
+      color: $primary;
+      margin-left: 10px;
+    }
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
 }

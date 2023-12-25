@@ -1,0 +1,22 @@
+.catalog-controls {
+  &__search {
+    input.form-control[type=text] {
+      padding-right: 70px;
+    }
+
+    [type=submit] {
+      top: 0;
+      right: 10px;
+    }
+  }
+
+  &__view {
+    .btn.dropdown-toggle::after {
+      margin-left: 180px;
+    }
+  }
+
+  .dropdown-menu {
+    width: 100%;
+  }
+}
