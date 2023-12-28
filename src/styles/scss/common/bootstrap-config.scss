@@ -6,12 +6,12 @@ $container-max-widths: (
         xxl: 1120px,
         xxxl: 1400px,
 ) !default;
-
-$primary:  #73962C;
+$primary: #73962C;
 $blue: #2268B4;
 $gray-800: #BDBDBE;
-
-$breadcrumb-divider: quote("—");
+$breadcrumb-divider: "—";
+$dropdown-min-width: 100%;
 $bootstrap-icons-font-dir: "./../../../node_modules/bootstrap-icons/font/fonts";
-@import "./../../../../node_modules/bootstrap/scss/bootstrap.scss";
-@import "./../../../../node_modules/bootstrap-icons/font/bootstrap-icons.scss";
+
+@import "./../../../../node_modules/bootstrap/scss/bootstrap";
+@import "./../../../../node_modules/bootstrap-icons/font/bootstrap-icons";

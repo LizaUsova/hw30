@@ -3,8 +3,8 @@
 
 .content {
   button {
-    color: $blue;
     padding: 12px;
+    color: $blue;
   }
 
   .accordion-body {
@@ -12,144 +12,86 @@
   }
 
   .card {
-    overflow: hidden;
+    .hover-image-wrapper {
+      overflow: hidden;
+      min-height: 330px;
+      max-height: 330px;
 
-    .hover-image {
-      width: 100%;
-      height: auto;
-      transition: transform $duration ease-in-out;
+      img {
+        transition: 0.3s;
+
+        &:first-child {
+          right: 0;
+        }
+
+        &:last-child {
+          right: -100%;
+        }
+      }
     }
 
-    &:hover .hover-image {
-      cursor: pointer;
-      @include slideAnimation($duration);
-    }
+    &:hover .hover-image-wrapper img {
+      &:first-child {
+        right: 100%;
+      }
 
-    @keyframes slideAnimation {
-      to {
-        transform: translateX(100%);
+      &:last-child {
+        right: 0;
       }
     }
   }
 
-  .card1 {
-    overflow: hidden;
+  .sticker {
+    &__new {
+      top: 10px;
+      right: 10px;
 
-    .sticker {
-      &__new {
-        right: 10px;
-        top: 10px;
-        background-color: $primary;
-        font-family: $font-late-bold;
-        font-size: $f-xs;
-        color: #fff;
-        padding: 5px 12px;
-        text-transform: uppercase;
-        display: block;
-        border-radius: 33px;
-        line-height: 17px;
+      display: block;
 
-        width: 55px;
-        height: 25px;
-      }
+      width: 55px;
+      height: 25px;
+      padding: 5px 12px;
+
+      font-family: $font-late-bold;
+      font-size: $f-xs;
+      line-height: 17px;
+      color: #fff;
+      text-transform: uppercase;
+
+      background-color: $primary;
+      border-radius: 33px;
     }
 
-    .hover-image {
-       width: 100%;
-       height: auto;
-       transition: transform $duration ease-in-out;
-     }
+    &__best {
+      content: url("./../../assets/pictures/svg/fire.svg");
 
-    &:hover .hover-image {
-      cursor: pointer;
-      @include slideAnimation($duration);
+      top: 10px;
+      right: 10px;
+
+      display: block;
+
+      width: 55px;
+      height: 25px;
+      padding: 5px 10px;
+
+      background-color: $bg-light-color;
+      border-radius: 33px;
     }
 
-    @keyframes slideAnimation {
-      to {
-        transform: translateX(100%);
-      }
-    }
-  }
+    &__team {
+      content: url("./../../assets/pictures/svg/favorite.svg");
 
-  .card2 {
-    .sticker {
-      &__best {
-        content: url(./../../assets/pictures/svg/fire.svg);
-        right: 10px;
-        top: 10px;
-        background-color: $bg-light-color;
-        padding: 5px 10px;
-        display: block;
-        border-radius: 33px;
+      top: 40px;
+      right: 10px;
 
-        width: 55px;
-        height: 25px;
-      }
+      display: block;
 
-      &__team {
-        content: url(./../../assets/pictures/svg/favorite.svg);
-        right: 10px;
-        top: 40px;
-        background-color: $blue;
-        padding: 2px 10px;
-        display: block;
-        border-radius: 33px;
+      width: 55px;
+      height: 25px;
+      padding: 2px 10px;
 
-        width: 55px;
-        height: 25px;
-      }
-    }
-
-    .hover-image {
-      width: 100%;
-      height: auto;
-      transition: transform $duration ease-in-out;
-    }
-
-    &:hover .hover-image {
-      cursor: pointer;
-      @include slideAnimation($duration);
-    }
-
-    @keyframes slideAnimation {
-      to {
-        transform: translateX(100%);
-      }
-    }
-  }
-
-  .card3 {
-    .sticker {
-      &__best {
-        content: url(./../../assets/pictures/svg/fire.svg);
-        right: 10px;
-        top: 10px;
-        background-color: $bg-light-color;
-        padding: 5px 10px;
-        display: block;
-        border-radius: 33px;
-
-        width: 55px;
-        height: 25px;
-      }
-    }
-
-    .hover-image {
-      width: 100%;
-      height: auto;
-      transition: transform $duration ease-in-out;
-    }
-
-    &:hover .hover-image {
-      cursor: pointer;
-      @include slideAnimation($duration);
-    }
-
-    @keyframes slideAnimation {
-      to {
-        transform: translateX(100%);
-      }
+      background-color: $blue;
+      border-radius: 33px;
     }
   }
 

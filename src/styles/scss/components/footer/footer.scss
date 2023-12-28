@@ -26,38 +26,34 @@
     p, span {
       color: $gray-800;
     }
-
-    //&_social a {
-    //
-    //}
   }
 
-  &-bottom {
-    background-color: black;
+    &-bottom {
+      background-color: black;
 
-    p {
-      color: $gray-800;
+      p {
+        color: $gray-800;
+      }
+
+      &__scroll {
+        right: 160px;
+        bottom: 5px;
+      }
     }
 
-    &__scroll {
-      right: 160px;
-      bottom: 5px;
+    .dropdown {
+      [type="button"] {
+        min-width: 210px;
+        padding: 5px 30px;
+      }
+
+      .btn.dropdown-toggle::after {
+        margin-left: 10px;
+        color: $primary;
+      }
+    }
+
+    .dropdown-menu {
+      width: 100%;
     }
   }
-
-  .dropdown {
-
-  [type=button]{
-    min-width: 210px;
-    padding: 5px 30px;
-  }
-    .btn.dropdown-toggle::after {
-      color: $primary;
-      margin-left: 10px;
-    }
-  }
-
-  .dropdown-menu {
-    width: 100%;
-  }
-}

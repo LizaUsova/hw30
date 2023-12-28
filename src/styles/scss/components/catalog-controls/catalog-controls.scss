@@ -1,10 +1,10 @@
 .catalog-controls {
   &__search {
-    input.form-control[type=text] {
+    input.form-control[type="text"] {
       padding-right: 70px;
     }
 
-    [type=submit] {
+    [type="submit"] {
       top: 0;
       right: 10px;
     }
