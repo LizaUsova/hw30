@@ -4247,7 +4247,7 @@ textarea.form-control-lg {
   --bs-list-group-item-padding-x: 1rem;
   --bs-list-group-item-padding-y: 0.5rem;
   --bs-list-group-action-color: var(--bs-secondary-color);
-  --bs-list-group-action-hover-color: var(--bs-emphasis-color);
+  --bs-list-group-action-hover-color: #73962C;
   --bs-list-group-action-hover-bg: var(--bs-tertiary-bg);
   --bs-list-group-action-active-color: var(--bs-body-color);
   --bs-list-group-action-active-bg: var(--bs-secondary-bg);
@@ -16599,34 +16599,46 @@ img {
 
 @use "./../../common/variables" as *;
 @use "./../../common/bootstrap-config" as *;
+.footer a {
+  color: #BDBDBE; }
+.footer span {
+  color: #BDBDBE; }
 .footer-top {
   padding-top: 45px;
   padding-bottom: 22px;
   background-color: #17181A; }
-  .footer-top_picture {
-    width: 100%;
-    max-width: 50%; }
   .footer-top_logo {
     width: 100%;
+    max-width: 80%; }
+  .footer-top_picture {
+    width: 100%;
     max-width: 60%; }
-  .footer-top .list-group a {
-    color: #BDBDBE; }
-  .footer-top p, .footer-top span {
-    color: #BDBDBE; }
+  .footer-top .controls {
+    border-color: #BDBDBE; }
+    .footer-top .controls-mail {
+      padding-right: 50px; }
+      .footer-top .controls-mail::placeholder {
+        color: #BDBDBE; }
+    .footer-top .controls [type="text"] {
+      color: #BDBDBE;
+      background-color: transparent; }
+    .footer-top .controls [type="submit"] {
+      top: 2px;
+      right: 15px; }
+  .footer-top .dropdown [type="button"] {
+    min-width: 100%;
+    max-width: 210px;
+    padding: 5px 30px; }
+  .footer-top .dropdown .btn.dropdown-toggle::after {
+    margin-left: 10px;
+    color: #73962C; }
+  .footer-top .dropdown-menu {
+    width: 100%; }
 .footer-bottom {
   background-color: black; }
-  .footer-bottom p {
+  .footer-bottom a {
+    padding: 5px 10px; }
+  .footer-bottom_copyright p {
     color: #BDBDBE; }
-  .footer-bottom__scroll {
-    right: 160px;
-    bottom: 5px; }
-.footer .dropdown [type="button"] {
-  min-width: 210px;
-  padding: 5px 30px; }
-.footer .dropdown .btn.dropdown-toggle::after {
-  margin-left: 10px;
-  color: #73962C; }
-.footer .dropdown-menu {
-  width: 100%; }
 
 /*# sourceMappingURL=home-page.css.map */

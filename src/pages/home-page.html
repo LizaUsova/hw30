@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="./../styles/css/home-page.css">
 </head>
 <body class="bg-light">
-    <header class="header">
+    <header class="header" id="header">
         <div class="header_top py-1">
                     <div class="container">
                         <div class="row">
@@ -726,111 +726,80 @@
             <div class="container">
                 <div class="row">
                     <div class="col-3">
-                        <div class="d-flex flex-column gap-4 me-5">
-                            <div class="row">
-                                <div class="footer-top_logo">
-                                    <img src="./../assets/pictures/svg/logo_footer.svg" alt="logo">
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="d-flex gap-3">
-                                    <i class="bi bi-geo-alt-fill text-white fs-4"></i>
-                                    <p class="mb-0">344, rue Jardin Colar - 34130 LANSARGUES - FRANCE</p>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="d-flex gap-3">
-                                    <a class="text-reset" href="tel:+33(0)499632050">
-                                            <i class="bi bi-telephone-fill text-white fs-4 pe-2"></i>
-                                            <span>+33(0)499632050</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="d-flex gap-3">
-                                    <a class="text-reset" href="mailto:sales@duodisplay.com">
-                                            <i class="bi bi-envelope-fill text-white fs-4 pe-2"></i>
-                                            <span>sales@duodisplay.com</span>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="row">
-                                <div class="footer-top_picture">
-                                    <img src="./../assets/pictures/svg/made_in_france_new.svg" alt="made">
-                                </div>
-                            </div>
-                        </div>
+                        <ul class="d-flex flex-column gap-4 me-5 mb-0 p-0">
+                            <li><a href="#" class="footer-top_logo"><img class="footer-top_logo" src="./../assets/pictures/svg/logo_footer.svg" alt="logo"></a></li>
+                            <li><a href="https://www.google.com/maps/place/344+Rue+du+Jardin+Colar,+34130+Lansargues,+France/@43.6464437,4.0775713,17z/data=!3m1!4b1!4m6!3m5!1s0x12b69f5229db284b:0x739c5d0201fa1338!8m2!3d43.6464437!4d4.0775713!16s%2Fg%2F11c5l49_ry?entry=ttu"><i class="bi bi-geo-alt-fill text-white fs-4"></i><span>344, rue Jardin Colar - 34130 LANSARGUES - FRANCE</span></a></li>
+                            <li><a href="tel:+33(0)499632050" class="text-reset d-flex align-items-center"><i class="bi bi-telephone-fill text-white fs-4 pe-2"></i><span>+33(0)499632050</span></a></li>
+                            <li><a class="text-reset d-flex align-items-center" href="mailto:sales@duodisplay.com"><i class="bi bi-envelope-fill text-white fs-4 pe-2"></i><span>sales@duodisplay.com</span></a></li>
+                            <li><img class="footer-top_picture" src="./../assets/pictures/svg/made_in_france_new.svg" alt="made"></li>
+                        </ul>
                     </div>
                     <div class="col-7">
                       <div class="row d-flex">
                           <div class="col-3">
                               <div class="list-group">
-                                  <p class="text-white fs-4 fw-bold">Products</p>
-                                  <a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">
-                                      Banner stands
-                                  </a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Display Wall</a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Counters</a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Outdoor</a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Frames</a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Stands</a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Outdoor</a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Frames</a>
-                                  <a class="list-group-item list-group-item-action disabled bg-transparent border-0 p-0 mb-1" aria-disabled="true">Stands</a>
+                                  <h3 class="text-white fs-4 fw-bold mb-3">Products</h3>
+                                  <ul class="p-0">
+                                      <li><a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">Banner stands</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Display Wall</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Counters</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Outdoor</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Frames</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Stands</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Outdoor</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Frames</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Stands</a></li>
+                                  </ul>
                               </div>
                           </div>
                           <div class="col-3">
                               <div class="list-group">
-                                  <p class="text-white fs-4 fw-bold">Applications</p>
-                                  <a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">
-                                      Tradeshows
-                                  </a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Events</a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Road-shows</a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Decoration</a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Retail</a>
-                                  <a class="list-group-item list-group-item-action disabled bg-transparent border-0 p-0 mb-1" aria-disabled="true">Printing</a>
+                                  <h3 class="text-white fs-4 fw-bold mb-3">Applications</h3>
+                                  <ul class="p-0">
+                                      <li><a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">Tradeshows</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Events</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Road-shows</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Decoration</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Retail</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Printing</a></li>
+                                  </ul>
                               </div>
                           </div>
                           <div class="col-3">
                               <div class="list-group">
-                                  <p class="text-white fs-4 fw-bold">My Profile</p>
-                                  <a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">
-                                      Dashboard
-                                  </a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Account</a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Orders</a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Quotes</a>
-                                  <a class="list-group-item list-group-item-action disabled bg-transparent border-0 p-0 mb-1" aria-disabled="true">My Contacts</a>
+                                  <h3 class="text-white fs-4 fw-bold mb-3">My Profile</h3>
+                                  <ul class="p-0">
+                                      <li><a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">Dashboard</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Account</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Orders</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Quotes</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">My Contacts</a></li>
+                                  </ul>
                               </div>
                           </div>
                           <div class="col-3">
                               <div class="list-group">
-                                  <p class="text-white fs-4 fw-bold">Duo Display</p>
-                                  <a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">
-                                      About Duo
-                                  </a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">General terms</a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Warranty</a>
-                                  <a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Legal notice</a>
-                                  <a class="list-group-item list-group-item-action disabled bg-transparent border-0 p-0 mb-1" aria-disabled="true">Contact us</a>
+                                  <h3 class="text-white fs-4 fw-bold mb-3">Duo Display</h3>
+                                  <ul class="p-0">
+                                      <li><a href="#" class="list-group-item list-group-item-action active bg-transparent text-primary fw-bold border-0 p-0 mb-1" aria-current="true">About Duo</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">General terms</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Warranty</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Legal notice</a></li>
+                                      <li><a href="#" class="list-group-item list-group-item-action bg-transparent border-0 p-0 mb-1">Contact us</a></li>
+                                  </ul>
                               </div>
                           </div>
                       </div>
                     </div>
                     <div class="col-2">
                         <div class="d-flex flex-column justify-content-end">
-                             <p class="text-white fs-4 fw-bold">Newsletter</p>
-<!--                            <button type="button" class="btn btn-outline-secondary rounded-pill mb-2">-->
-<!--                                <span>Your mail address</span>-->
-<!--                                <i class="bi bi-caret-right-fill text-primary ms-3"></i>-->
-<!--                            </button>-->
-
-                            <div class="input-group rounded-pill mb-2">
-                                <input type="text" class="form-control rounded-start-pill" placeholder="Your mail address" aria-label="Recipient's username" aria-describedby="button-addon2">
-                                <button class="btn btn-outline-secondary rounded-end-pill" type="button" id="button-addon2"><i class="bi bi-caret-right-fill text-primary ms-3"></i></button>
-                            </div>
-
+                             <h3 class="text-white fs-4 fw-bold mb-3">Newsletter</h3>
+                            <form class="controls position-relative">
+                                <label class="mb-3 d-block">
+                                    <input class="controls-mail form-control border border-secondary rounded-pill" placeholder="Your mail address" type="text" aria-describedby="button-addon2">
+                                </label>
+                                <button class="btn border-0 bg-body position-absolute bg-transparent" type="submit"><i class="bi bi-caret-right-fill text-primary"></i></button>
+                            </form>
                             <div class="footer-top_lang mb-5">
                                 <div class="dropdown">
                                     <button class="btn btn-outline-secondary rounded-pill dropdown-toggle text-white" type="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -844,14 +813,16 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="row">
-                                <div class="footer-top_social d-flex gap-1">
-                                    <a href="#"><img src="./../assets/pictures/svg/social/1.svg" alt="logo"></a>
-                                    <a href="#"><img src="./../assets/pictures/svg/social/2.svg" alt="logo"></a>
-                                    <a href="#"><img src="./../assets/pictures/svg/social/3.svg" alt="logo"></a>
-                                    <a href="#"><img src="./../assets/pictures/svg/social/4.svg" alt="logo"></a>
-                                    <a href="#"><img src="./../assets/pictures/svg/social/5.svg" alt="logo"></a>
-                                    <a href="#"><img src="./../assets/pictures/svg/social/6.svg" alt="logo"></a>
+                            <div class="footer-top_social">
+                                <div class="row">
+                                    <ul class="d-flex m-0 justify-content-between list-unstyled">
+                                        <li><a href="#"><img src="./../assets/pictures/svg/social/1.svg" alt="logo"></a></li>
+                                        <li><a href="#"><img src="./../assets/pictures/svg/social/2.svg" alt="logo"></a></li>
+                                        <li><a href="#"><img src="./../assets/pictures/svg/social/3.svg" alt="logo"></a></li>
+                                        <li><a href="#"><img src="./../assets/pictures/svg/social/4.svg" alt="logo"></a></li>
+                                        <li><a href="#"><img src="./../assets/pictures/svg/social/5.svg" alt="logo"></a></li>
+                                        <li><a href="#"><img src="./../assets/pictures/svg/social/6.svg" alt="logo"></a></li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
@@ -861,15 +832,13 @@
         </div>
         <div class="footer-bottom py-2">
             <div class="container">
-                <div class="row">
-                    <p class="m-0"><i class="bi bi-c-circle"></i>
-                    <span>2021 Duo Industrie. All rights reserved. From Duo with</span>
-                        <i class="bi bi-heart"></i></p>
-                </div>
-                <div class="footer-bottom__scroll position-fixed">
-                    <button type="button" class="btn-primary rounded-circle bg-primary border-0">
-                        <i class="bi bi-arrow-up text-white"></i>
-                    </button>
+                <div class="d-flex align-items-center justify-content-between">
+                    <p class="footer-bottom_copyright d-flex m-0 gap-2">
+                        <i class="bi bi-c-circle text-secondary"></i>
+                        <span class="m-0">2021 Duo Industrie. All rights reserved. From Duo with</span>
+                        <i class="bi bi-heart text-secondary"></i>
+                    </p>
+                    <a href="#header" class="footer-bottom_scroll rounded-circle bg-primary "><i class="bi bi-arrow-up text-white"></i></a>
                 </div>
             </div>
         </div>

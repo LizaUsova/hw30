@@ -2,48 +2,55 @@
 @use "./../../common/bootstrap-config" as *;
 
 .footer {
+  a {
+    color: $gray-800;
+  }
+
+  span {
+    color: $gray-800;
+  }
+
   &-top {
     padding-top: 45px;
     padding-bottom: 22px;
     background-color: $main-text-color;
 
-    &_picture {
+    &_logo {
       width: 100%;
-      max-width: 50%;
+      max-width: 80%;
     }
 
-    &_logo {
+    &_picture {
       width: 100%;
       max-width: 60%;
     }
 
-    .list-group {
-      a {
-        color: $gray-800;
-      }
-    }
+    .controls {
+      border-color: $gray-800;
 
-    p, span {
-      color: $gray-800;
-    }
-  }
+      &-mail {
+        padding-right: 50px;
 
-    &-bottom {
-      background-color: black;
-
-      p {
-        color: $gray-800;
+        &::placeholder {
+          color: $gray-800;
+        }
       }
 
-      &__scroll {
-        right: 160px;
-        bottom: 5px;
+      [type="text"] {
+        color: $gray-800;
+        background-color: transparent;
+      }
+
+      [type="submit"] {
+        top: 2px;
+        right: 15px;
       }
     }
 
     .dropdown {
       [type="button"] {
-        min-width: 210px;
+        min-width: 100%;
+        max-width: 210px;
         padding: 5px 30px;
       }
 
@@ -57,3 +64,18 @@
       width: 100%;
     }
   }
+
+  &-bottom {
+    background-color: black;
+
+    a {
+      padding: 5px 10px;
+    }
+
+    &_copyright {
+      p {
+        color: $gray-800;
+      }
+    }
+  }
+}
